@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { useServerInsertedHTML } from "next/navigation";
 import { ReactNode, useState } from "react";
@@ -14,7 +14,7 @@ export const StyledComponentsRegistry = ({
   useServerInsertedHTML(() => {
     const styles = styledComponentsStyleSheet.getStyleElement();
     styledComponentsStyleSheet.instance.clearTag();
-    return <>{styles}</>
+    return <>{styles}</>;
   });
 
   if (typeof window !== "undefined") {

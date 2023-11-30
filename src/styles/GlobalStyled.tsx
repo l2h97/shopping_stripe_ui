@@ -10,6 +10,11 @@ export const GlobalStyled = createGlobalStyle`
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  overflow-x: hidden
 }
-`
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+`;
