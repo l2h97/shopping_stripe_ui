@@ -1,3 +1,9 @@
+import { HomePage } from "@/components/HomePage/HomePage";
+
 export default function Home() {
-  return <main>hello work!!</main>;
+  return (
+    <main>
+      <HomePage />
+    </main>
+  );
 }
