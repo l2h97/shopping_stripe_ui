@@ -1,11 +1,9 @@
-"use client";
-
 import { Inter } from "next/font/google";
 import { ReactNode } from "react";
 import { StyledComponentsRegistry } from "@/components/StyledComponentsRegistry/StyledComponentsRegistry";
 import { GlobalStyled } from "../styles/GlobalStyled";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 // export const metadata: Metadata = {
 //   title: "Create Next App",
@@ -15,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <StyledComponentsRegistry>
           <GlobalStyled />
           {children}

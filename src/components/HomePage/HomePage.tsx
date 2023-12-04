@@ -1,3 +1,9 @@
+import { HomePageStyle } from "./HomePageStyle";
+
 export const HomePage = () => {
-  return <>Hello!!!</>;
+  return (
+    <>
+      <HomePageStyle>Hello!!</HomePageStyle>
+    </>
+  );
 };
