@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import { StyledComponentsRegistry } from "@/pkgs/StyledComponentsRegistry";
+import { StyledComponentsRegistry } from "@/styles/StyledComponentsRegistry";
 import { MainHeader } from "@/components/MainHeader/MainHeader";
+import { GlobalStyles } from "@/styles/GlobalStyles";
 
 export const metadata: Metadata = {
-  title: "Land draw",
-  description: "Land draw",
+  title: "H Bakery",
+  description: "H bakery store",
 };
 
 export default function RootLayout({
@@ -18,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <StyledComponentsRegistry>
+          <GlobalStyles />
           <MainHeader />
           {children}
         </StyledComponentsRegistry>

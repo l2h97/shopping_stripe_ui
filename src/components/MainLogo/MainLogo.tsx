@@ -1,10 +1,12 @@
-import Image from "next/image";
-import logo from "../../../public/logo.svg";
+import Link from "next/link";
+import { MainLogoIcon } from "../Icons/MainLogoIcon";
 
 export const MainLogo = () => {
   return (
     <>
-      <Image src={logo} alt="main logo" />
+      <Link href="/">
+        <MainLogoIcon />
+      </Link>
     </>
   );
 };
