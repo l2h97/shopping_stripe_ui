@@ -1,4 +1,4 @@
-import { SearchIcon } from "../Icons/SeachIcon";
+import { SearchIcon } from "../Icons/SearchIcon";
 import {
   SearchBoxInput,
   SearchIconWrapper,
@@ -9,7 +9,9 @@ export const MainSearchBox = () => {
   return (
     <Wrapper>
       <SearchBoxInput />
-      <SearchIconWrapper width="26px" height="26px" />
+      <SearchIconWrapper>
+        <SearchIcon width="100%" height="100%" />
+      </SearchIconWrapper>
     </Wrapper>
   );
 };

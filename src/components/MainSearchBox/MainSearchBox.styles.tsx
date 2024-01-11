@@ -1,7 +1,6 @@
 "use client";
 
 import styled from "styled-components";
-import { SearchIcon } from "../Icons/SeachIcon";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -13,10 +12,14 @@ export const Wrapper = styled.div`
 export const SearchBoxInput = styled.input`
   height: 40px;
   width: 60%;
+
+  border-radius: 24px;
+  padding: 7px 36px;
 `;
 
-export const SearchIconWrapper = styled(SearchIcon)`
+export const SearchIconWrapper = styled.button`
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 7px;
+  left: 7px;
+  height: 26px;
 `;
