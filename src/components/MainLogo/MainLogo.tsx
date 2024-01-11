@@ -1,16 +1,18 @@
 import Link from "next/link";
 import { MainLogoIcon } from "../Icons/MainLogoIcon";
-import { BrandLogo, Wrapper } from "./MainLogo.styled";
+import { BrandLogo, BrandName, Wrapper } from "./MainLogo.styles";
 
 export const MainLogo = () => {
   return (
     <>
-      <Link href="/" passHref={true} legacyBehavior>
-        <Wrapper>
-          <MainLogoIcon width="26px" height="26px" />
-          <BrandLogo>HBakery</BrandLogo>
-        </Wrapper>
-      </Link>
+      <Wrapper>
+        <Link href="/" passHref={true} legacyBehavior>
+          <BrandLogo>
+            <MainLogoIcon width="26px" height="26px" />
+            <BrandName>HBakery</BrandName>
+          </BrandLogo>
+        </Link>
+      </Wrapper>
     </>
   );
 };

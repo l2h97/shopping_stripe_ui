@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import { StyledComponentsRegistry } from "@/styles/StyledComponentsRegistry";
 import { GlobalStyles } from "@/styles/GlobalStyles";
-import { MainLayout } from "@/components/Layouts/MainLayout";
+import { MainLayout } from "@/Layouts/MainLayout";
+import { Theme } from "@/providers/Theme";
 
 export const metadata: Metadata = {
   title: "H Bakery",
@@ -18,8 +18,10 @@ export default function RootLayout({
     <html lang="en">
       <body suppressHydrationWarning={true}>
         <StyledComponentsRegistry>
-          <GlobalStyles />
-          <MainLayout>{children}</MainLayout>
+          <Theme>
+            <GlobalStyles />
+            <MainLayout>{children}</MainLayout>
+          </Theme>
         </StyledComponentsRegistry>
       </body>
     </html>
