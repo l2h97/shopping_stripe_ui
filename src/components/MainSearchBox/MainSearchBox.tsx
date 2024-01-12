@@ -8,7 +8,7 @@ import {
 export const MainSearchBox = () => {
   return (
     <Wrapper>
-      <SearchBoxInput />
+      <SearchBoxInput placeholder="Search products" />
       <SearchIconWrapper>
         <SearchIcon width="100%" height="100%" />
       </SearchIconWrapper>

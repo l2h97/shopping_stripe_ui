@@ -5,14 +5,7 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-type Theme = {
-  colors: Record<string, string>;
-  fontFamily: Record<string, NextFont>;
-  fontSize: Record<string, string>;
-  screens: Record<string, string>;
-};
-
-export const lightModeTheme: Theme = {
+export const lightModeTheme = {
   colors: {
     redBackground: "#ffc0cb",
     redText: "#ed7161",

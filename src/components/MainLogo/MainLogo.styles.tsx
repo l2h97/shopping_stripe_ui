@@ -15,6 +15,10 @@ export const BrandLogo = styled.a`
   background-color: ${(props) => props.theme.colors.redBackground};
   border-radius: 16px;
   padding: 0 8px;
+
+  &:focus {
+    outline: 1px solid ${(props) => props.theme.colors.redText};
+  }
 `;
 
 export const BrandName = styled.p`
