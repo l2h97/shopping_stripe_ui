@@ -11,8 +11,6 @@ export const InputCustom = (props: IInputCustomProps) => {
 };
 
 export const InputStyle = styled.input`
-  border: none;
-
   &:focus {
     border: 1px solid ${(props) => props.theme.colors.redBackground};
     outline: 1px solid ${(props) => props.theme.colors.redText};

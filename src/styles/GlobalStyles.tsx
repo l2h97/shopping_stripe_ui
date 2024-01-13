@@ -16,11 +16,17 @@ const styles = css`
     overflow-x: hidden;
     line-height: 1;
     font-size: ${(props) => props.theme.fontSize.m};
+    color: ${(props) => props.theme.colors.blackText};
   }
 
   a {
     color: inherit;
     text-decoration: none;
+  }
+
+  input {
+    font-size: inherit;
+    color: inherit;
   }
 `;
 

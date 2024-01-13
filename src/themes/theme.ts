@@ -9,6 +9,7 @@ export const lightModeTheme = {
   colors: {
     redBackground: "#ffc0cb",
     redText: "#ed7161",
+    blackText: "#252525",
   },
   fontFamily: {
     inter,
