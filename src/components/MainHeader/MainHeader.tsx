@@ -3,6 +3,7 @@ import { MainSearchBox } from "../MainSearchBox/MainSearchBox";
 import { Wrapper } from "./MainHeader.styles";
 
 export const MainHeader = () => {
+  console.log("MainHeader:re-render");
   return (
     <>
       <Wrapper>

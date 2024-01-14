@@ -7,9 +7,10 @@ const inter = Inter({
 
 export const lightModeTheme = {
   colors: {
-    redBackground: "#ffc0cb",
-    redText: "#ed7161",
-    blackText: "#252525",
+    bgPrimary: "#ffc0cb",
+    borderPrimary: "#ed7161",
+    textSecondary: "#E84833",
+    textPrimary: "#252525",
   },
   fontFamily: {
     inter,

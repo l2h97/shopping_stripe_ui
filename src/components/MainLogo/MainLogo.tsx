@@ -3,6 +3,7 @@ import { MainLogoIcon } from "../Icons/MainLogoIcon";
 import { BrandLogo, BrandName, Wrapper } from "./MainLogo.styles";
 
 export const MainLogo = () => {
+  console.log("MainLogo:re-render");
   return (
     <>
       <Wrapper>

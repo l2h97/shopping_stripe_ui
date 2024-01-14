@@ -16,17 +16,25 @@ const styles = css`
     overflow-x: hidden;
     line-height: 1;
     font-size: ${(props) => props.theme.fontSize.m};
-    color: ${(props) => props.theme.colors.blackText};
+    color: ${(props) => props.theme.colors.textPrimary};
   }
 
   a {
     color: inherit;
     text-decoration: none;
+
+    &:visited {
+      color: ${(props) => props.theme.colors.textSecondary};
+    }
   }
 
   input {
     font-size: inherit;
     color: inherit;
+  }
+
+  button {
+    background-color: transparent;
   }
 `;
 

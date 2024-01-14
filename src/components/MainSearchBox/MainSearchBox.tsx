@@ -1,19 +1,25 @@
 "use client";
 
-import { useCallback, useState } from "react";
+import { memo, useCallback, useState } from "react";
 import { SearchIcon } from "../Icons/SearchIcon";
 import {
   SearchBoxInput,
   SearchIconWrapper,
   Wrapper,
 } from "./MainSearchBox.styles";
+import { useTheme } from "styled-components";
 
 export const MainSearchBox = () => {
+  const theme = useTheme();
   const [isFocus, setFocus] = useState<boolean>(false);
 
-  const updateFocusHandler = useCallback(() => {
+  // const updateFocusHandler = useCallback(() => {
+  //   setFocus((prev) => !prev);
+  // }, [isFocus]);
+
+  const updateFocusHandler = () => {
     setFocus((prev) => !prev);
-  }, []);
+  };
 
   console.log("isFocus::", isFocus);
 
@@ -26,7 +32,11 @@ export const MainSearchBox = () => {
         $isFocus={isFocus}
       />
       <SearchIconWrapper $isFocus={isFocus}>
-        <SearchIcon width="100%" height="100%" />
+        <SearchIcon
+          width="100%"
+          height="100%"
+          color={theme.colors.borderPrimary}
+        />
       </SearchIconWrapper>
       <TestCo />
     </Wrapper>
@@ -34,6 +44,6 @@ export const MainSearchBox = () => {
 };
 
 const TestCo = () => {
-  console.log("here");
+  console.log("TestCo::re-render::");
   return <></>;
 };

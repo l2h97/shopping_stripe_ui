@@ -12,10 +12,10 @@ interface IButtonCustomProps
 
 export const ButtonCustom = (props: IButtonCustomProps) => {
   return (
-    <ButtonStyle className={props.className}>{props.children}</ButtonStyle>
+    <ButtonStyle className={props.className} {...props}>
+      {props.children}
+    </ButtonStyle>
   );
 };
 
-export const ButtonStyle = styled.button`
-  background-color: transparent;
-`;
+export const ButtonStyle = styled.button``;
