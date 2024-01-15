@@ -13,6 +13,7 @@ export const lightModeTheme = {
     textPrimary: "#252525",
     notificationPrimary: "#FF0000",
     textTertiary: "#F5F5F5",
+    overlayPrimary: "#00000080",
   },
   fontFamily: {
     inter,

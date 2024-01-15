@@ -5,12 +5,10 @@ import { Wrapper } from "./MainHeader.styles";
 
 export const MainHeader = () => {
   return (
-    <>
-      <Wrapper>
-        <MainLogo />
-        <MainSearchBox />
-        <ProfileHeader />
-      </Wrapper>
-    </>
+    <Wrapper>
+      <MainLogo />
+      <MainSearchBox />
+      <ProfileHeader />
+    </Wrapper>
   );
 };
