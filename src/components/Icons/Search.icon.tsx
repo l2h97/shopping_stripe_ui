@@ -7,8 +7,6 @@ export const SearchIcon = ({
   height?: string;
   color?: string;
 }) => {
-  console.log("SearchIcon::rerender");
-
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

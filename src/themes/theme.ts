@@ -11,11 +11,15 @@ export const lightModeTheme = {
     borderPrimary: "#ed7161",
     textSecondary: "#E84833",
     textPrimary: "#252525",
+    notificationPrimary: "#FF0000",
+    textTertiary: "#F5F5F5",
   },
   fontFamily: {
     inter,
   },
   fontSize: {
+    s: "12px",
+    ms: "14px",
     m: "16px",
     xl: "22px",
   },

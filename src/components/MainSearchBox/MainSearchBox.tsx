@@ -1,7 +1,7 @@
 "use client";
 
-import { memo, useCallback, useState } from "react";
-import { SearchIcon } from "../Icons/SearchIcon";
+import { useCallback, useState } from "react";
+import { SearchIcon } from "../Icons/Search.icon";
 import {
   SearchBoxInput,
   SearchIconWrapper,
@@ -13,15 +13,9 @@ export const MainSearchBox = () => {
   const theme = useTheme();
   const [isFocus, setFocus] = useState<boolean>(false);
 
-  // const updateFocusHandler = useCallback(() => {
-  //   setFocus((prev) => !prev);
-  // }, [isFocus]);
-
-  const updateFocusHandler = () => {
+  const updateFocusHandler = useCallback(() => {
     setFocus((prev) => !prev);
-  };
-
-  console.log("isFocus::", isFocus);
+  }, [setFocus]);
 
   return (
     <Wrapper>
@@ -38,12 +32,6 @@ export const MainSearchBox = () => {
           color={theme.colors.borderPrimary}
         />
       </SearchIconWrapper>
-      <TestCo />
     </Wrapper>
   );
-};
-
-const TestCo = () => {
-  console.log("TestCo::re-render::");
-  return <></>;
 };

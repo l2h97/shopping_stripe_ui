@@ -1,9 +1,8 @@
 import Link from "next/link";
-import { MainLogoIcon } from "../Icons/MainLogoIcon";
+import { MainLogoIcon } from "../Icons/MainLogo.icon";
 import { BrandLogo, BrandName, Wrapper } from "./MainLogo.styles";
 
 export const MainLogo = () => {
-  console.log("MainLogo:re-render");
   return (
     <>
       <Wrapper>
