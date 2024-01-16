@@ -1,6 +1,10 @@
 import { ReactNode } from "react";
 import { MainHeader } from "../../components/MainHeader/MainHeader";
-import { HeaderContainer, MainContainer } from "./MainLayout.styles";
+import {
+  ContentContainer,
+  HeaderContainer,
+  MainContainer,
+} from "./MainLayout.styles";
 
 export const MainLayout = ({ children }: { children: ReactNode }) => {
   return (
@@ -8,7 +12,7 @@ export const MainLayout = ({ children }: { children: ReactNode }) => {
       <HeaderContainer>
         <MainHeader />
       </HeaderContainer>
-      {children}
+      <ContentContainer>{children}</ContentContainer>
     </MainContainer>
   );
 };

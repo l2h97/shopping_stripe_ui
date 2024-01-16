@@ -17,12 +17,12 @@ export const SearchBoxInput = styled(InputCustom)<{ $isFocus?: boolean }>`
   width: 60%;
 
   padding: ${(props) => (props.$isFocus ? "7px 16px" : "7px 36px")};
-  border: 1px solid ${(props) => props.theme.colors.borderPrimary};
+  border: 1px solid ${(props) => props.theme.colors.border.borderPrimary};
   border-radius: 24px;
   transition: padding 0.2s linear;
 
   &:focus {
-    outline: 1px solid ${(props) => props.theme.colors.borderPrimary};
+    outline: 1px solid ${(props) => props.theme.colors.border.borderPrimary};
   }
 `;
 

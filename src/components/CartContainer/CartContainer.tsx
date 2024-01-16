@@ -16,7 +16,11 @@ export const CartContainer = (props: IProps) => {
   return (
     <Wrapper width={width}>
       {count ? <CountContainer>{count}</CountContainer> : <></>}
-      <CartIcon width="100%" height="100%" color={theme.colors.borderPrimary} />
+      <CartIcon
+        width="100%"
+        height="100%"
+        color={theme.colors.border.borderPrimary}
+      />
     </Wrapper>
   );
 };

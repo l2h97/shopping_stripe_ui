@@ -7,16 +7,30 @@ const inter = Inter({
 
 export const lightModeTheme = {
   colors: {
-    bgPrimary: "#ffc0cb",
-    borderPrimary: "#ed7161",
-    textSecondary: "#E84833",
-    textPrimary: "#252525",
-    notificationPrimary: "#FF0000",
-    textTertiary: "#F5F5F5",
-    overlayPrimary: "#00000080",
+    border: {
+      borderSecondary: "#D3D3D3",
+      borderPrimary: "#ed7161",
+    },
+    background: {
+      bgPrimary: "#ffc0cb",
+    },
+    text: {
+      textSecondary: "#E84833",
+      textPrimary: "#252525",
+      textTertiary: "#F5F5F5",
+    },
+    utilities: {
+      notificationPrimary: "#FF0000",
+      overlayPrimary: "#00000080",
+    },
   },
   fontFamily: {
     inter,
+  },
+  zIndex: {
+    modelOverLay: 2000,
+    mainPage: 1000,
+    header: 1500,
   },
   fontSize: {
     s: "12px",

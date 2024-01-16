@@ -29,7 +29,7 @@ export const MainSearchBox = () => {
         <SearchIcon
           width="100%"
           height="100%"
-          color={theme.colors.borderPrimary}
+          color={theme.colors.border.borderPrimary}
         />
       </SearchIconWrapper>
     </Wrapper>

@@ -16,7 +16,7 @@ const styles = css`
     overflow-x: hidden;
     line-height: 1;
     font-size: ${(props) => props.theme.fontSize.m};
-    color: ${(props) => props.theme.colors.textPrimary};
+    color: ${(props) => props.theme.colors.text.textPrimary};
   }
 
   a {
@@ -24,7 +24,7 @@ const styles = css`
     text-decoration: none;
 
     &:visited {
-      color: ${(props) => props.theme.colors.textSecondary};
+      color: ${(props) => props.theme.colors.text.textSecondary};
     }
   }
 

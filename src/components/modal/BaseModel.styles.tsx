@@ -6,8 +6,9 @@ export const ModelOverlay = styled.div`
   left: 0;
   width: 100%;
   left: 100%;
-  background-color: ${(props) => props.theme.colors.overlayPrimary};
+  background-color: ${(props) => props.theme.colors.utilities.overlayPrimary};
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: ${(props) => props.theme.zIndex.modelOverLay};
 `;
