@@ -1,15 +1,15 @@
 "use client";
 
 import { useCallback, useState } from "react";
-import { SearchIcon } from "../Icons/Search.icon";
+import { SearchIcon } from "../../Icons/Search.icon";
 import {
   SearchBoxInput,
   SearchIconWrapper,
-  Wrapper,
-} from "./MainSearchBox.styles";
+  Container,
+} from "./HeaderSearchBox.styles";
 import { useTheme } from "styled-components";
 
-export const MainSearchBox = () => {
+export const HeaderSearchBox = () => {
   const theme = useTheme();
   const [isFocus, setFocus] = useState<boolean>(false);
 
@@ -18,7 +18,7 @@ export const MainSearchBox = () => {
   }, [setFocus]);
 
   return (
-    <Wrapper>
+    <Container>
       <SearchBoxInput
         placeholder="Search products"
         onBlur={updateFocusHandler}
@@ -32,6 +32,6 @@ export const MainSearchBox = () => {
           color={theme.colors.border.borderPrimary}
         />
       </SearchIconWrapper>
-    </Wrapper>
+    </Container>
   );
 };

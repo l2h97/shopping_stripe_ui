@@ -1,10 +1,10 @@
 "use client";
 
 import styled from "styled-components";
-import { ButtonCustom } from "../Customs/Button.custom";
-import { InputCustom } from "../Customs/Input.custom";
+import { ButtonCustom } from "../../Customs/Button.custom";
+import { InputCustom } from "../../Customs/Input.custom";
 
-export const Wrapper = styled.label`
+export const Container = styled.label`
   display: flex;
   align-items: center;
   position: relative;

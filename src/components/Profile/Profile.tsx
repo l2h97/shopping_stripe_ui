@@ -2,24 +2,24 @@
 
 import { useTheme } from "styled-components";
 import { ProfileIcon } from "../Icons/Profile.icon";
-import { Wrapper } from "./ProfileContainer.styles";
+import { Container } from "./Profile.styles";
 
 type IProps = {
   width?: string;
   height?: string;
 };
 
-export const ProfileContainer = (props: IProps) => {
+export const Profile = (props: IProps) => {
   const { width } = props;
   const theme = useTheme();
 
   return (
-    <Wrapper width={width}>
+    <Container width={width}>
       <ProfileIcon
         width="100%"
         height="100%"
         color={theme.colors.border.borderPrimary}
       />
-    </Wrapper>
+    </Container>
   );
 };
