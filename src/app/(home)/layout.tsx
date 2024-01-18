@@ -20,9 +20,7 @@ export default function RootLayout({
         <StyledComponentsRegistry>
           <Theme>
             <GlobalStyles />
-            {/* <MainLayout>{children}</MainLayout> */}
-            <p>Root layout</p>
-            {children}
+            <MainLayout>{children}</MainLayout>
           </Theme>
         </StyledComponentsRegistry>
       </body>

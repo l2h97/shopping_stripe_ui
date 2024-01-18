@@ -8,23 +8,17 @@ export default function RegisterLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
-      <p>Register layout</p>
-      {children}
-    </>
+    <html lang="en">
+      <body suppressHydrationWarning={true}>
+        <StyledComponentsRegistry>
+          <Theme>
+            <GlobalStyles />
+            {/* <MainLayout>{children}</MainLayout> */}
+            <p>Root layout</p>
+            {children}
+          </Theme>
+        </StyledComponentsRegistry>
+      </body>
+    </html>
   );
-  // return (
-  //   <html lang="en">
-  //     <body suppressHydrationWarning={true}>
-  //       <StyledComponentsRegistry>
-  //         <Theme>
-  //           <GlobalStyles />
-  //           {/* <MainLayout>{children}</MainLayout> */}
-  //           <p>Root layout</p>
-  //           {children}
-  //         </Theme>
-  //       </StyledComponentsRegistry>
-  //     </body>
-  //   </html>
-  // );
 }
