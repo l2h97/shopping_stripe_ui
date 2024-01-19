@@ -39,8 +39,10 @@ export const lightModeTheme = {
     xl: "22px",
   },
   screens: {
+    phone: "580px",
+    tablet: "768px",
     laptop: "1024px",
-    laptopL: "1440px",
-    "4K": "2560px",
+    desktop: "1440px",
+    TV: "2560px",
   },
 };

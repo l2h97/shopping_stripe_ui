@@ -1,12 +1,8 @@
 import { HomePage } from "@/components/HomePage/HomePage";
+import { RegisterPage } from "@/components/RegisterPage/RegisterPage";
 import Link from "next/link";
 
-export default function RegisterPage() {
+export default function Register() {
   // const isAuth =
-  return (
-    <>
-      <p>Register page</p>
-      <Link href="/">back to home</Link>
-    </>
-  );
+  return <RegisterPage />;
 }

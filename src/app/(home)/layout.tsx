@@ -9,11 +9,7 @@ export const metadata: Metadata = {
   description: "H bakery store",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Home({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body suppressHydrationWarning={true}>

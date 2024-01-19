@@ -22,4 +22,8 @@ export const ContentContainer = styled.div`
   max-width: ${(props) => props.theme.screens.laptop};
   height: auto;
   margin: 0 auto;
+
+  @media (max-width: ${(props) => props.theme.screens.phone}) {
+    padding: 57px 8px;
+  }
 `;

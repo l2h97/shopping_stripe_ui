@@ -19,6 +19,11 @@ export const BrandLogo = styled.a`
   &:focus {
     outline: 1px solid ${(props) => props.theme.colors.text.textSecondary};
   }
+
+  @media (max-width: ${(props) => props.theme.screens.phone}) {
+    width: 40px;
+    border-radius: 50%;
+  }
 `;
 
 export const BrandName = styled.p`
@@ -26,4 +31,8 @@ export const BrandName = styled.p`
   font-size: ${(props) => props.theme.fontSize.xl};
   color: ${(props) => props.theme.colors.text.textSecondary};
   line-height: 26px;
+
+  @media (max-width: ${(props) => props.theme.screens.phone}) {
+    display: none;
+  }
 `;

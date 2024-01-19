@@ -1,3 +1,5 @@
+"use client";
+
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -7,5 +9,10 @@ export const Container = styled.div`
   height: 56px;
   padding: 0 16px;
   display: flex;
-  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: ${(props) => props.theme.screens.phone}) {
+    padding: 0 8px;
+  }
 `;
