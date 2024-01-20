@@ -24,7 +24,8 @@ const styles = css`
     text-decoration: none;
 
     &:visited {
-      color: ${(props) => props.theme.colors.text.textSecondary};
+      color: ${(props) => props.theme.colors.text.textQuaternary};
+      text-decoration: underline;
     }
   }
 

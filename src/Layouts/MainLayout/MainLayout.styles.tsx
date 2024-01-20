@@ -17,13 +17,13 @@ export const HeaderContainer = styled.div`
 `;
 
 export const ContentContainer = styled.div`
-  padding: 57px 16px;
+  padding: 57px 16px 16px 16px;
   width: 100%;
   max-width: ${(props) => props.theme.screens.laptop};
   height: auto;
   margin: 0 auto;
 
   @media (max-width: ${(props) => props.theme.screens.phone}) {
-    padding: 57px 8px;
+    padding: 57px 8px 8px 8px;
   }
 `;

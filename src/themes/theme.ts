@@ -18,6 +18,7 @@ export const lightModeTheme = {
       textSecondary: "#E84833",
       textPrimary: "#252525",
       textTertiary: "#F5F5F5",
+      textQuaternary: "#0000ff",
     },
     utilities: {
       notificationPrimary: "#FF0000",

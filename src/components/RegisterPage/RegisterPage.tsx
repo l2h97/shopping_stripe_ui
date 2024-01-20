@@ -1,25 +1,27 @@
 import Link from "next/link";
-import { Container } from "./RegisterPage.styles";
+import {
+  Container,
+  ContentContainer,
+  FormContainer,
+  ImgContainer,
+} from "./RegisterPage.styles";
 import Image from "next/image";
+import { RegisterForm } from "../Forms/Register/RegisterForm";
 
 export const RegisterPage = () => {
   return (
     <Container>
-      <div>
-        <Image
-          src="/registerbg.jpg"
+      <ContentContainer>
+        <ImgContainer
+          src="/pancakes-svgrepo-com.svg"
           alt="image welcome"
           width={100}
           height={100}
         />
-        <div
-          style={{
-            width: "300px",
-            height: "300px",
-            backgroundColor: "violet",
-          }}
-        ></div>
-      </div>
+        <FormContainer>
+          <RegisterForm />
+        </FormContainer>
+      </ContentContainer>
     </Container>
   );
 };
