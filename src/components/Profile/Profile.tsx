@@ -18,7 +18,7 @@ export const Profile = (props: IProps) => {
       <ProfileIcon
         width="100%"
         height="100%"
-        color={theme.colors.border.borderPrimary}
+        color={theme.colors.border.borderGray}
       />
     </Container>
   );

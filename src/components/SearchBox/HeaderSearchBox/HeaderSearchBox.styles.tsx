@@ -1,7 +1,7 @@
 "use client";
 
 import styled from "styled-components";
-import { ButtonCustom } from "../../Customs/Button.custom";
+import { ButtonCustom } from "../../Customs/CustomButton";
 import { InputCustom } from "../../Customs/Input.custom";
 
 export const Container = styled.label`
@@ -17,12 +17,12 @@ export const SearchBoxInput = styled(InputCustom)<{ $isFocus?: boolean }>`
   width: 60%;
 
   padding: ${(props) => (props.$isFocus ? "7px 16px" : "7px 36px")};
-  border: 1px solid ${(props) => props.theme.colors.border.borderPrimary};
+  border: 1px solid ${(props) => props.theme.colors.border.borderRed};
   border-radius: 24px;
   transition: padding 0.2s linear;
 
   &:focus {
-    outline: 1px solid ${(props) => props.theme.colors.border.borderPrimary};
+    outline: 1px solid ${(props) => props.theme.colors.border.borderRed};
   }
 `;
 

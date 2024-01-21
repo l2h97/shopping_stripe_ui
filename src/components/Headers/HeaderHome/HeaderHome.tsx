@@ -1,14 +1,14 @@
 import { Logo } from "../../Logo/Logo";
 import { HeaderSearchBox } from "../../SearchBox/HeaderSearchBox/HeaderSearchBox";
 import { ProfileHeader } from "../../Profile/ProfileHeader/ProfileHeader";
-import { Wrapper } from "./MainHeader.styles";
+import { Container } from "./HeaderHome.styles";
 
-export const MainHeader = () => {
+export const HeaderHome = () => {
   return (
-    <Wrapper>
+    <Container>
       <Logo />
       <HeaderSearchBox />
       <ProfileHeader />
-    </Wrapper>
+    </Container>
   );
 };

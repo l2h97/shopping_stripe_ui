@@ -4,7 +4,7 @@ import {
   HeaderContainer,
   MainContainer,
 } from "../MainLayout/MainLayout.styles";
-import { RegisterHeader } from "@/components/Headers/RegisterHeader/RegisterHeader";
+import { RegisterHeader } from "@/components/Headers/HeaderRegister/HeaderRegister";
 
 export const RegisterLayout = ({ children }: { children: ReactNode }) => {
   return (

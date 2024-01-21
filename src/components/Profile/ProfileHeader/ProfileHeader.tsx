@@ -1,4 +1,4 @@
-import { Cart } from "../../Cart/Cart";
+import { Cart } from "../../ButtonCart/ButtonCart";
 import { CartIcon } from "../../Icons/Cart.icon";
 import { ProfileIcon } from "../../Icons/Profile.icon";
 import { Profile } from "../Profile";

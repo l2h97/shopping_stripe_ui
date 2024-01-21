@@ -1,4 +1,4 @@
-export const MainLogoIcon = ({
+export const LogoIcon = ({
   width = "70",
   height = "70",
 }: {

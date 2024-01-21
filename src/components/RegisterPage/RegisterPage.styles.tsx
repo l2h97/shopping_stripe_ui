@@ -24,6 +24,4 @@ export const ImgContainer = styled(Image)`
 export const FormContainer = styled.div`
   width: 50%;
   height: 80%;
-  border: 1px solid ${(props) => props.theme.colors.border.borderPrimary};
-  border-radius: 24px;
 `;

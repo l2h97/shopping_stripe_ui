@@ -1,6 +1,6 @@
-import { HomePage } from "@/components/HomePage/HomePage";
+import { HomePage } from "@/components/PageHome/HomePage";
 
-export default function Home() {
+export default function HomePage() {
   // const isAuth =
   return <HomePage />;
 }

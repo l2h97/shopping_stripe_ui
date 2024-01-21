@@ -6,7 +6,7 @@ import {
   ImgContainer,
 } from "./RegisterPage.styles";
 import Image from "next/image";
-import { RegisterForm } from "../Forms/Register/RegisterForm";
+import { RegisterForm } from "../Forms/FormRegister/RegisterForm";
 
 export const RegisterPage = () => {
   return (

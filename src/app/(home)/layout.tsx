@@ -9,7 +9,11 @@ export const metadata: Metadata = {
   description: "H bakery store",
 };
 
-export default function Home({ children }: { children: React.ReactNode }) {
+export default function HomeLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body suppressHydrationWarning={true}>

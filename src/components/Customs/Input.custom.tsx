@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { IPropsCustom } from "./Button.custom";
+import { IPropsCustom } from "./CustomButton";
 import { ComponentPropsWithoutRef } from "react";
 
-interface IInputCustomProps
+interface ICustomInputProps
   extends Omit<IPropsCustom, "children">,
     Omit<ComponentPropsWithoutRef<"input">, "children"> {}
 
-export const InputCustom = (props: IInputCustomProps) => {
+export const CustomInput = (props: ICustomInputProps) => {
   return <InputStyle className={props.className} {...props} />;
 };
 

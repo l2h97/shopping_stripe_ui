@@ -12,12 +12,12 @@ export const BrandLogo = styled.a`
   justify-content: center;
   gap: 8px;
 
-  background-color: ${(props) => props.theme.colors.background.bgPrimary};
+  background-color: ${(props) => props.theme.colors.background.bgPink};
   border-radius: 16px;
   padding: 0 8px;
 
   &:focus {
-    outline: 1px solid ${(props) => props.theme.colors.text.textSecondary};
+    outline: 1px solid ${(props) => props.theme.colors.border.borderRed};
   }
 
   @media (max-width: ${(props) => props.theme.screens.phone}) {
@@ -29,7 +29,7 @@ export const BrandLogo = styled.a`
 export const BrandName = styled.p`
   font-weight: 900;
   font-size: ${(props) => props.theme.fontSize.xl};
-  color: ${(props) => props.theme.colors.text.textSecondary};
+  color: ${(props) => props.theme.colors.text.textRed};
   line-height: 26px;
 
   @media (max-width: ${(props) => props.theme.screens.phone}) {

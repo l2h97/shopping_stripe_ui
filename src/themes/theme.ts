@@ -8,21 +8,21 @@ const inter = Inter({
 export const lightModeTheme = {
   colors: {
     border: {
-      borderSecondary: "#D3D3D3",
-      borderPrimary: "#ed7161",
+      borderGray: "#D3D3D3",
+      borderRed: "#ed7161",
     },
     background: {
-      bgPrimary: "#ffc0cb",
+      bgPink: "#ffc0cb",
     },
     text: {
-      textSecondary: "#E84833",
-      textPrimary: "#252525",
-      textTertiary: "#F5F5F5",
-      textQuaternary: "#0000ff",
+      textRed: "#E84833",
+      textBlack: "#252525",
+      textWhite: "#F5F5F5",
+      textBlue: "#0000ff",
     },
     utilities: {
-      notificationPrimary: "#FF0000",
-      overlayPrimary: "#00000080",
+      notificationRed: "#FF0000",
+      overlayGray: "#00000080",
     },
   },
   fontFamily: {

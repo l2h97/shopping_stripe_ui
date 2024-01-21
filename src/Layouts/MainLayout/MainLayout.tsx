@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { MainHeader } from "../../components/Headers/MainHeader/MainHeader";
+import { MainHeader } from "../../components/Headers/HeaderHome/HeaderHome";
 import {
   ContentContainer,
   HeaderContainer,

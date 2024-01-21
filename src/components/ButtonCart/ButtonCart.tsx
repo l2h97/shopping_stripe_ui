@@ -1,7 +1,7 @@
 "use client";
 
 import { useTheme } from "styled-components";
-import { CountContainer, Container } from "./Cart.styles";
+import { CountContainer, Container } from "./ButtonCart.styles";
 import { CartIcon } from "../Icons/Cart.icon";
 
 type IProps = {
@@ -19,7 +19,7 @@ export const Cart = (props: IProps) => {
       <CartIcon
         width="100%"
         height="100%"
-        color={theme.colors.border.borderPrimary}
+        color={theme.colors.border.borderRed}
       />
     </Container>
   );

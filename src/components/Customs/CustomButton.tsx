@@ -6,11 +6,11 @@ export interface IPropsCustom {
   className?: string;
 }
 
-interface IButtonCustomProps
+interface ICustomButtonProps
   extends IPropsCustom,
     Omit<React.ComponentPropsWithoutRef<"button">, "children"> {}
 
-export const ButtonCustom = (props: IButtonCustomProps) => {
+export const CustomButton = (props: ICustomButtonProps) => {
   return (
     <ButtonStyle className={props.className} {...props}>
       {props.children}
