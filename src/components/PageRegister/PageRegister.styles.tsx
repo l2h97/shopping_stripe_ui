@@ -19,9 +19,18 @@ export const ImgContainer = styled(Image)`
   width: 50%;
   max-width: 500px;
   height: auto;
+
+  @media (max-width: ${(props) => props.theme.screens.phone}) {
+    display: none;
+  }
 `;
 
 export const FormContainer = styled.div`
   width: 50%;
   height: 80%;
+
+  @media (max-width: ${(props) => props.theme.screens.phone}) {
+    width: 100%;
+    /* height: auto; */
+  }
 `;

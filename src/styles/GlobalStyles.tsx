@@ -36,6 +36,7 @@ const styles = css`
 
   button {
     background-color: transparent;
+    font-size: inherit;
   }
 `;
 

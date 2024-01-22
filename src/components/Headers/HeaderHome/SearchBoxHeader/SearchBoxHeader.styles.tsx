@@ -1,8 +1,8 @@
 "use client";
 
+import { CustomButton } from "@/components/Customs/CustomButton";
+import { CustomInput } from "@/components/Customs/Input.custom";
 import styled from "styled-components";
-import { ButtonCustom } from "../../Customs/CustomButton";
-import { InputCustom } from "../../Customs/Input.custom";
 
 export const Container = styled.label`
   display: flex;
@@ -12,7 +12,7 @@ export const Container = styled.label`
   padding: 0 2px;
 `;
 
-export const SearchBoxInput = styled(InputCustom)<{ $isFocus?: boolean }>`
+export const SearchBoxInput = styled(CustomInput)<{ $isFocus?: boolean }>`
   height: 40px;
   width: 60%;
 
@@ -26,7 +26,7 @@ export const SearchBoxInput = styled(InputCustom)<{ $isFocus?: boolean }>`
   }
 `;
 
-export const SearchIconWrapper = styled(ButtonCustom)<{ $isFocus?: boolean }>`
+export const SearchIconWrapper = styled(CustomButton)<{ $isFocus?: boolean }>`
   visibility: ${(props) => (props.$isFocus ? "hidden" : "visible")};
   position: absolute;
   top: 50%;

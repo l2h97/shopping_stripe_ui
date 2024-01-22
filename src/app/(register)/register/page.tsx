@@ -1,8 +1,7 @@
-import { HomePage } from "@/components/PageHome/HomePage";
-import { RegisterPage } from "@/components/RegisterPage/RegisterPage";
-import Link from "next/link";
+import { PageRegister } from "@/components/PageRegister/PageRegister";
+import { configuration } from "@/config/configuration";
 
 export default function RegisterPage() {
   // const isAuth =
-  return <RegisterPage />;
+  return <PageRegister />;
 }

@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { Container } from "./HomePage.styles";
+import { Container } from "./PageHome.styles";
 
-export const HomePage = () => {
+export const PageHome = () => {
   return (
     <Container>
       <p>This is Home</p>

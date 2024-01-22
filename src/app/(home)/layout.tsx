@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { StyledComponentsRegistry } from "@/styles/StyledComponentsRegistry";
 import { GlobalStyles } from "@/styles/GlobalStyles";
-import { MainLayout } from "@/Layouts/MainLayout/MainLayout";
+import { LayoutMain } from "@/Layouts/LayoutMain/LayoutMain";
 import { Theme } from "@/providers/Theme";
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function HomeLayout({
         <StyledComponentsRegistry>
           <Theme>
             <GlobalStyles />
-            <MainLayout>{children}</MainLayout>
+            <LayoutMain>{children}</LayoutMain>
           </Theme>
         </StyledComponentsRegistry>
       </body>

@@ -9,7 +9,7 @@ type IProps = {
   count?: number;
 };
 
-export const Cart = (props: IProps) => {
+export const ButtonCart = (props: IProps) => {
   const { width, count } = props;
   const theme = useTheme();
 

@@ -3,14 +3,14 @@ import {
   ContentContainer,
   HeaderContainer,
   MainContainer,
-} from "../MainLayout/MainLayout.styles";
-import { RegisterHeader } from "@/components/Headers/HeaderRegister/HeaderRegister";
+} from "./LayoutMain.styles";
+import { HeaderHome } from "@/components/Headers/HeaderHome/HeaderHome";
 
-export const RegisterLayout = ({ children }: { children: ReactNode }) => {
+export const LayoutMain = ({ children }: { children: ReactNode }) => {
   return (
     <MainContainer>
       <HeaderContainer>
-        <RegisterHeader />
+        <HeaderHome />
       </HeaderContainer>
       <ContentContainer>{children}</ContentContainer>
     </MainContainer>

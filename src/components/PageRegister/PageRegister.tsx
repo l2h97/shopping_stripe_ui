@@ -1,14 +1,12 @@
-import Link from "next/link";
 import {
   Container,
   ContentContainer,
   FormContainer,
   ImgContainer,
-} from "./RegisterPage.styles";
-import Image from "next/image";
+} from "./PageRegister.styles";
 import { RegisterForm } from "../Forms/FormRegister/RegisterForm";
 
-export const RegisterPage = () => {
+export const PageRegister = () => {
   return (
     <Container>
       <ContentContainer>
@@ -17,6 +15,7 @@ export const RegisterPage = () => {
           alt="image welcome"
           width={100}
           height={100}
+          priority
         />
         <FormContainer>
           <RegisterForm />

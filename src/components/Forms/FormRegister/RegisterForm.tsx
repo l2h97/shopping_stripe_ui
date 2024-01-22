@@ -1,20 +1,28 @@
-import { FormContainer } from "./RegisterForm.styles";
+import {
+  ButtonContainer,
+  FormContainer,
+  InputContainer,
+  LabelContainer,
+} from "./RegisterForm.styles";
 
 export const RegisterForm = () => {
+  // const
+
   return (
     <FormContainer>
-      <label htmlFor="">
+      <LabelContainer htmlFor="">
         <span>Email:</span>
-        <input type="text" />
-      </label>
-      <label htmlFor="">
+        <InputContainer type="text" placeholder="Email" />
+      </LabelContainer>
+      <LabelContainer htmlFor="">
         <span>Password:</span>
-        <input type="password" />
-      </label>
-      <label htmlFor="">
+        <InputContainer type="password" placeholder="Password" />
+      </LabelContainer>
+      <LabelContainer htmlFor="">
         <span>Confirm Password:</span>
-        <input type="password" />
-      </label>
+        <InputContainer type="password" placeholder="Confirm Password" />
+      </LabelContainer>
+      <ButtonContainer>Register</ButtonContainer>
     </FormContainer>
   );
 };

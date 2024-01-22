@@ -2,14 +2,14 @@
 
 import { useTheme } from "styled-components";
 import { ProfileIcon } from "../Icons/Profile.icon";
-import { Container } from "./Profile.styles";
+import { Container } from "./ButtonProfile.styles";
 
 type IProps = {
   width?: string;
   height?: string;
 };
 
-export const Profile = (props: IProps) => {
+export const ButtonProfile = (props: IProps) => {
   const { width } = props;
   const theme = useTheme();
 

@@ -1,4 +1,4 @@
-import { RegisterLayout } from "@/Layouts/RegisterLayout/RegisterLayout";
+import { LayoutRegister } from "@/Layouts/LayoutRegister/LayoutRegister";
 import { Theme } from "@/providers/Theme";
 import { GlobalStyles } from "@/styles/GlobalStyles";
 import { StyledComponentsRegistry } from "@/styles/StyledComponentsRegistry";
@@ -14,7 +14,7 @@ export default function RegisterLayout({
         <StyledComponentsRegistry>
           <Theme>
             <GlobalStyles />
-            <RegisterLayout>{children}</RegisterLayout>
+            <LayoutRegister>{children}</LayoutRegister>
           </Theme>
         </StyledComponentsRegistry>
       </body>

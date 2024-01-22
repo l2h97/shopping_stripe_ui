@@ -1,16 +1,16 @@
 import { ReactNode } from "react";
-import { MainHeader } from "../../components/Headers/HeaderHome/HeaderHome";
 import {
   ContentContainer,
   HeaderContainer,
   MainContainer,
-} from "./MainLayout.styles";
+} from "../LayoutMain/LayoutMain.styles";
+import { RegisterHeader } from "@/components/Headers/HeaderRegister/HeaderRegister";
 
-export const MainLayout = ({ children }: { children: ReactNode }) => {
+export const LayoutRegister = ({ children }: { children: ReactNode }) => {
   return (
     <MainContainer>
       <HeaderContainer>
-        <MainHeader />
+        <RegisterHeader />
       </HeaderContainer>
       <ContentContainer>{children}</ContentContainer>
     </MainContainer>

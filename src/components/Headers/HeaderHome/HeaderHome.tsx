@@ -1,7 +1,7 @@
-import { Logo } from "../../Logo/Logo";
-import { HeaderSearchBox } from "../../SearchBox/HeaderSearchBox/HeaderSearchBox";
-import { ProfileHeader } from "../../Profile/ProfileHeader/ProfileHeader";
 import { Container } from "./HeaderHome.styles";
+import { HeaderSearchBox } from "./SearchBoxHeader/SearchBoxHeader";
+import { ProfileHeader } from "./ProfileHeader/ProfileHeader";
+import { Logo } from "@/components/Logo/Logo";
 
 export const HeaderHome = () => {
   return (

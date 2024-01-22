@@ -1,12 +1,12 @@
 "use client";
 
 import { useCallback, useState } from "react";
-import { SearchIcon } from "../../Icons/Search.icon";
+import { SearchIcon } from "../../../Icons/Search.icon";
 import {
   SearchBoxInput,
   SearchIconWrapper,
   Container,
-} from "./HeaderSearchBox.styles";
+} from "./SearchBoxHeader.styles";
 import { useTheme } from "styled-components";
 
 export const HeaderSearchBox = () => {
