@@ -38,4 +38,5 @@ export const ButtonContainer = styled(CustomButton)`
 
 export const ValidateTextContainer = styled.p`
   color: ${(props) => props.theme.colors.text.textRed};
+  font-size: ${(props) => props.theme.fontSize.s};
 `;

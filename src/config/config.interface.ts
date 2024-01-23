@@ -4,4 +4,5 @@ export interface IConfig {
 
   baseUrl: string;
   spsUrl: string;
+  encryptionPublicKey: string;
 }
