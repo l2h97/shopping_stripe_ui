@@ -1,5 +1,6 @@
 import { RegisterData } from "@/components/Forms/FormRegister/RegisterForm";
 import { configuration } from "@/config/configuration";
+import { encryptPassword } from "@/utilities/encryptPassword";
 import axios from "axios";
 
 export const spsInstance = () => {
@@ -16,15 +17,24 @@ export const spsInstance = () => {
   return instance;
 };
 
-export const register = async (data: RegisterData) => {
+export const register = (data: RegisterData) => {
+  const config = configuration();
   const url = "/api/v1/auth/register";
 
-  try {
-    const response = await spsInstance().post(url, data);
+  const body = {
+    email: data.email,
+    fullName: data.fullName,
+    passwordHashed:
+      encryptPassword(data.password, config.encryptionPublicKey) || "",
+  };
+  console.log("🚀 ~ register ~ body:", body);
 
-    // if
-    return response;
-  } catch (error) {
-    console.log("error::", error);
-  }
+  // try {
+  //   const response = await spsInstance().post(url, data);
+
+  //   // if
+  //   return response;
+  // } catch (error) {
+  //   console.log("error::", error);
+  // }
 };

@@ -1,6 +1,6 @@
 "use client";
 
-import { ChangeEvent, useCallback, useState } from "react";
+import { ChangeEvent, FormEvent, useCallback, useState } from "react";
 import {
   ButtonContainer,
   FormContainer,
@@ -9,14 +9,18 @@ import {
   ValidateTextContainer,
 } from "./RegisterForm.styles";
 import isEmail from "validator/lib/isEmail";
+import { passwordValidator } from "@/utilities/passwordValidator";
+import { register } from "@/services/shoppingPortal.service";
 
 export type RegisterData = {
   fullName: string;
   fullNameValidateError: string;
   email: string;
   emailValidateError: string;
-  passwordHashed: string;
+  password: string;
   passwordValidateError: string;
+  confirmPassword: string;
+  confirmPasswordValidateError: string;
 };
 
 export const RegisterForm = () => {
@@ -25,8 +29,10 @@ export const RegisterForm = () => {
     fullNameValidateError: "",
     email: "",
     emailValidateError: "",
-    passwordHashed: "",
+    password: "",
     passwordValidateError: "",
+    confirmPassword: "",
+    confirmPasswordValidateError: "",
   });
 
   const handleChangeFullName = useCallback(
@@ -89,8 +95,86 @@ export const RegisterForm = () => {
     [setFormData],
   );
 
+  const handleChangePassword = useCallback(
+    (e: ChangeEvent<HTMLInputElement>) => {
+      const { value } = e.target;
+      setFormData((prev) => {
+        if (!value) {
+          return {
+            ...prev,
+            password: "",
+            passwordValidateError: "Password must not empty",
+          };
+        }
+
+        const isValidPassword = passwordValidator(value);
+        if (!isValidPassword) {
+          return {
+            ...prev,
+            password: value,
+            passwordValidateError: "Password is invalid",
+          };
+        }
+
+        return {
+          ...prev,
+          password: value,
+          passwordValidateError: "",
+        };
+      });
+    },
+    [setFormData],
+  );
+
+  const handleChangeConfirmPassword = useCallback(
+    (e: ChangeEvent<HTMLInputElement>) => {
+      const { value } = e.target;
+      setFormData((prev) => {
+        if (!value) {
+          return {
+            ...prev,
+            confirmPassword: "",
+            confirmPasswordValidateError: "Password must not empty",
+          };
+        }
+
+        const isValidPassword = passwordValidator(value);
+        if (!isValidPassword) {
+          return {
+            ...prev,
+            confirmPassword: value,
+            confirmPasswordValidateError: "Password is invalid",
+          };
+        }
+
+        if (value !== formData.password) {
+          return {
+            ...prev,
+            confirmPassword: value,
+            confirmPasswordValidateError: "Password is not match",
+          };
+        }
+
+        return {
+          ...prev,
+          confirmPassword: value,
+          confirmPasswordValidateError: "",
+        };
+      });
+    },
+    [setFormData, formData.password],
+  );
+
+  const handleSubmit = useCallback(
+    (e: FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+      register(formData);
+    },
+    [formData],
+  );
+
   return (
-    <FormContainer>
+    <FormContainer onSubmit={handleSubmit}>
       <LabelContainer>
         <span>Full name:</span>
         <InputContainer
@@ -125,11 +209,35 @@ export const RegisterForm = () => {
       </LabelContainer>
       <LabelContainer>
         <span>Password:</span>
-        <InputContainer type="password" placeholder="Password" />
+        <InputContainer
+          type="password"
+          placeholder="Password"
+          value={formData.password}
+          onChange={handleChangePassword}
+        />
+        {formData.passwordValidateError ? (
+          <ValidateTextContainer>
+            {formData.passwordValidateError}
+          </ValidateTextContainer>
+        ) : (
+          <></>
+        )}
       </LabelContainer>
       <LabelContainer>
         <span>Confirm Password:</span>
-        <InputContainer type="password" placeholder="Confirm Password" />
+        <InputContainer
+          type="password"
+          placeholder="Confirm Password"
+          value={formData.confirmPassword}
+          onChange={handleChangeConfirmPassword}
+        />
+        {formData.confirmPasswordValidateError ? (
+          <ValidateTextContainer>
+            {formData.confirmPasswordValidateError}
+          </ValidateTextContainer>
+        ) : (
+          <></>
+        )}
       </LabelContainer>
       <ButtonContainer type="submit">Register</ButtonContainer>
     </FormContainer>
