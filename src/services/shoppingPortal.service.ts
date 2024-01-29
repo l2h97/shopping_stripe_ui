@@ -27,7 +27,7 @@ export const register = (data: RegisterData) => {
     passwordHashed:
       encryptPassword(data.password, config.encryptionPublicKey) || "",
   };
-  console.log("🚀 ~ register ~ body:", body);
+  console.log("🚀 ~ register ~ body:", body.passwordHashed);
 
   // try {
   //   const response = await spsInstance().post(url, data);
